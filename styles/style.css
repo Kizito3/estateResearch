@@ -33,6 +33,13 @@ button {
   font-family: "Plus Jakarta Sans", Poppins;
   border: none;
   cursor: pointer;
+  color: #000;
+}
+
+@media (max-width: 1180px) {
+  button {
+    color: #000;
+  }
 }
 
 .container {
@@ -759,8 +766,8 @@ button {
       border: none;
       border-radius: 5px;
       background: var(--pureWhite);
-      font-family: Poppins;
-      font-size: 16px;
+      color: var(--text-color);
+      font-size: 18px;
       font-weight: 400;
       cursor: pointer;
       transition: all 0.8s;
@@ -777,6 +784,11 @@ button {
 @media (max-width: 1180px) {
   .contact__input {
     flex-direction: column;
+  }
+  .contact__btn {
+    button {
+      color: #000 !important;
+    }
   }
 }
 
@@ -1228,7 +1240,24 @@ button {
   .item {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
+
+    button {
+      padding: 1rem 6rem;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+  .item__bg {
+    background: url("../images/Group-2266-1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
 }
 
@@ -1501,6 +1530,46 @@ button {
     }
   }
 }
+
+/* =============================================== BEREAVEMENT SECTION STYLING ====================== */
+.bereavement__flex {
+  padding-block: 10rem;
+  background: url("../images/Group-2266-1.png");
+  background-size: cover;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  /* align-items: center; */
+  gap: 2rem;
+  p {
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+
+  .item__ber {
+    button {
+      margin-top: 2rem;
+      padding: 1rem 6rem;
+      font-size: 17px;
+      background: var(--pink-color);
+      border-radius: 5px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .bereavement__flex {
+    flex-direction: column;
+    padding-block: 6rem;
+    p {
+      font-size: 16px;
+    }
+  }
+}
 /* +++++====================================== FOOTER SECTION STYLING =============================== */
 
 footer {
@@ -1541,11 +1610,49 @@ footer {
       }
     }
   }
+
+  .copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgb(240, 238, 240);
+    }
+  }
 }
 
 @media (max-width: 1180px) {
   .footer__grid {
     grid-template-columns: 1fr !important;
-    /* flex-direction: column; */
+    .footer__grid__item {
+      h2 {
+        font-size: 20px !important;
+      }
+      p {
+        font-size: 16px !important;
+      }
+      h3 {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+      }
+      h4 {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+      }
+      a {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .copy {
+    margin-top: 2rem !important;
+
+    p {
+      font-size: 16px !important;
+    }
   }
 }
