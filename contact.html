@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+      <label for="nav-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="about.html" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="private-client.html" class="navigation__link"
+              >Private Client</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="public-sector.html" class="navigation__link"
+              >Public Sector</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="beneficiaries.html" class="navigation__link"
+              >Beneficiaries</a
+            >
+          </li>
+
+          <li class="navigation__item">
+            <a href="webinars-trainings.html" class="navigation__link"
+              >Webinars & Training</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="contact.html" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="header">
+      <div class="logo_box">
+        <h4 class="logo">LOGO IPSUM</h4>
+      </div>
+
+      <div class="container">
+        <div class="contact__flex1">
+          <div
+            class="contact__title"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            <div>
+              <h1>Get in touch today</h1>
+              <h4>Head Office</h4>
+              <p>102 Chapel Lane Wigan WN3 4HG</p>
+              <a>01942 826 500</a><br />
+              <a href="">Email us</a>
+            </div>
+            <div>
+              <h4>London Office</h4>
+              <p>150 Minories London EC3N 1LS</p>
+              <a href="">020 7347 5140</a><br />
+              <a href="">Email us</a>
+            </div>
+          </div>
+
+          <div class="map__top">
+            <div
+              class="mapouter"
+              data-aos="fade-down-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="1500"
+            >
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap_iframe"
+                  frameborder="100"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=1072&amp;height=448&amp;hl=en&amp;q=102 Chapel Lane Wigan WN3 4HG&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe
+                ><a href="https://embed-googlemap.com">embed google map</a>
+              </div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 800px;
+                  height: 500px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 800px;
+                  height: 500px;
+                }
+                .gmap_iframe {
+                  width: 800px !important;
+                  height: 500px !important;
+                }
+
+                @media (max-width: 1180px) {
+                  .mapouter {
+                    width: 100%;
+                    /* height: 500px; */
+                  }
+                  .gmap_canvas {
+                    width: 100% !important;
+                  }
+                  .gmap_iframe {
+                    width: 100% !important;
+                    /* height: 500px !important; */
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="contact__section">
+      <div class="container">
+        <div class="contact__form">
+          <div
+            class="contact__content"
+            data-aos="fade-down-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            <h3>CONTACT</h3>
+            <h2>Get in touch</h2>
+            <p>
+              Fill in the form below to contact us and a member of our team will
+              be in touch to assist.
+            </p>
+          </div>
+
+          <form
+            data-aos="fade-up-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1500"
+          >
+            <div class="contact__flex">
+              <div class="contact__input">
+                <input type="text" placeholder="Full Name" />
+                <input type="text" placeholder="Company Name" />
+              </div>
+              <div class="contact__input">
+                <input type="email" placeholder="Email Address" />
+
+                <input type="text" placeholder="Phone Number" />
+              </div>
+
+              <div class="contact__input">
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <div class="contact__btn">
+                <button>Send enquiry</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__grid__item">
+            <h4>Logo Ipsum</h4>
+          </div>
+          <div class="footer__grid__item">
+            <h2>HEAD OFFICE</h2>
+            <p>102 Chapel Lane, Wigan WN3 4HG</p>
+            <a href="tel:+23475r6899">01942 826 500</a> <br />
+            <a href="mailto:+23475r6899">Email Us</a>
+
+            <h3>Estate Research Ltd Company No. 08765186</h3>
+            <h4>Estate Research PC Ltd Company No. 10253079</h4>
+          </div>
+          <div class="footer__grid__item">
+            <h2>LONDON OFFICE</h2>
+            <p>150 Minories, London EC3N 1LS</p>
+            <a href="tel:+23475r6899">020 7347 5140</a> <br />
+            <a href="mailto:+23475r6899">Email Us</a>
+
+            <h3>Privacy Policy | Cookie Policy</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
